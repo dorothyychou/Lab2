@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Household Meeting Minutes</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Dorothy">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    </head>
+    <body>
+        <header>OCTOBER 2, 2021</header>
+        <nav class="notes">
+            <ul>
+                <li class="notes"><a href="#meeting-notes">Meeting Notes</a></li>
+                <li class="notes"><a href="#to-do-list">To-Do List</a></li>
+                <li class="notes"><a href="#finished-tasks">Finished Tasks</a></li>
+                <li class="notes"><a href="#more-about-us">More About Us</a></li>
+                <li class="notes"><a href="#your-info">Your Information</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div>
+                <h1>Household Meeting Notes</h1>
+                <b>Attendees:</b> Dorothy & Shirley
+            </div>
+
+            <hr>
+    
+            <section>
+                <h2 id="meeting-notes">Meeting Notes</h2>
+                <p>
+                    On October 2, 2021, an urgent meeting was called in the household of Dorothy and Shirley.<br>
+                    The <em>smell</em> of their trash can had become so overwhelming it was attracting flies.
+                    Not only that, their dishes had piled up in the sink. <br>
+                    Dorothy looked a the sink and thought <i>Wow, this was all from cooking dinner?</i><br>
+                    <img class="sink-pic"
+                    src="./media/dishes-in-sink.jpeg"
+                    alt="Messy Sink Drawing"
+                    height="500">
+                </p>
+            </section>
+
+            <section>
+                <h2 id="to-do-list">To-Do List</h2>
+                <ol>
+                    <li><strong>take out the trash!</strong></li>
+                    <li>wash the dishes</li>
+                    <li>vacuum the carpet</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2 id="finished-tasks">Finished Tasks</h2>
+                <h3>Dorothy and Shirley successfully cleaned their house!</h3>
+                <input type="checkbox"><label>take out the trash!</label><br><br>
+                <video controls width="500">
+                
+                    <source src="./media/paper_trash_stop_motion.mp4"
+                            type="video/mp4">
+                
+                    Sorry, your browser doesn't support embedded videos.
+                </video><br><br>
+                <input type="checkbox"><label>wash the dishes</label><br>
+                <figure>
+                    <figcaption>Listen to Dorothy and Shirley wash the dishes:</figcaption>
+                    <audio
+                        controls
+                        src="./media/washing-dishes-2.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </figure><br>
+                <input type="checkbox"><label>vacuum the carpet</label><br><br>
+                <details>
+                    <summary>Guess how long it took Dorothy and Shirley to vacuum the house?</summary>
+                    About 1 hour.
+                </details>
+            </section>
+
+            <section>
+                <h2 id="more-about-us">More About Us</h2>
+                <textarea id="aboutus" name="aboutus" rows="5" cols="33">We are both third year Math-CS majors from Norcal. Dorothy enjoys photography and Shirley enjoys dancing.</textarea>
+            </section>
+
+            <section>
+                <h2 id="your-info">Your Information</h2>
+                <fieldset>
+                    <legend>Let us know your contact information and we will be in touch soon!</legend>
+                
+                    <form action="" method="get" class="form1">
+                        <div class="form1">
+                          <label for="name">Your name: </label>
+                          <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form1">
+                            <label for="email">Your email: </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form1">
+                            <input type="submit" value="SUBMIT">
+                        </div>
+                    </form>
+                </fieldset><br>
+                <label for="bday">When is your birthday:</label><br>
+                <input type="date" id="bday" name="bday"
+                    value="1999-9-13"
+                    min="1900-01-01" max="2021-10-2"><br>
+
+                    <br>
+                
+                <p>Pick your favorite color out of the following:</p>
+
+                <div>
+                    <input type="radio" id="black" name="color" value="black"
+                            checked>
+                    <label for="black">Black</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="white" name="color" value="white">
+                    <label for="white">White</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="blue" name="color" value="blue">
+                    <label for="blue">Blue</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="red">Red</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="green" name="color" value="green">
+                    <label for="green">Green</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="purple" name="color" value="purple">
+                    <label for="purple">Purple</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="yellow" name="color" value="yellow">
+                    <label for="yellow">Yellow</label>
+                </div><br>
+                    
+                <label for="icecream">Choose your favorite ice cream flavor:</label>
+                <input list="flavors" id="icecream" name="icecream" />
+                <datalist id="flavors">
+                    <option value="Vanilla">
+                    <option value="Chocolate">
+                    <option value="Strawberry">
+                    <option value="Cookie Dough">
+                    <option value="Mint Chocolate">
+                    <option value="Matcha">
+                </datalist><br> <br>
+
+                <label for="animal-select">Choose your favorite animal:</label>
+
+                <select name="animals" id="animal-select">
+                    <option value="">--Choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="tiger">Tiger</option>
+                    <option value="snake">Snake</option>
+                    <option value="spider">Spider</option>
+                    <option value="wolf">Wolf</option>
+                </select>
+            </section>
+        </main>
+    </body>
+</html>
